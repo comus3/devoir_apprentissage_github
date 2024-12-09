@@ -1,11 +1,6 @@
 #ifndef MOTOR_CONTROL_H
 #define MOTOR_CONTROL_H
-
-#include <Arduino.h>
-
-#define MOTOR_PIN1 9  
-#define MOTOR_PIN2 10 
-#define ENABLE_PIN 11 // pin to enable the motor (PWM)
+#include "config.h"
 
 extern bool isMotorRunning;       
 extern bool isClockwise;          

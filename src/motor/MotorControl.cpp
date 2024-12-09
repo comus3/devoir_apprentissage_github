@@ -14,8 +14,6 @@ void initializeMotor() {
     pinMode(ENABLE_PIN, OUTPUT);
 
     stopMotor();
-    Serial.begin(9600); 
-    Serial.println("Motor initialized.");
 }
 
 // Clockwise rotation
@@ -67,14 +65,4 @@ void toggleMotorDirection() {
     }
 
     directionChangeCount++; 
-}
-
-// Automatic motor stop management
-void checkMotorTimeout() {
-    if (isMotorRunning) {
-        if (millis() - startTime >= 30000 || directionChangeCount >= 5) {
-            stopMotor();
-            Serial.println("Motor stopped automatically due to timeout or max direction changes.");
-        }
-    }
 }

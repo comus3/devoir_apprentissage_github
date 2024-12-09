@@ -1,9 +1,10 @@
 #include "sensor.h"
 #include <Arduino.h>
+#include "config.h"
 
 // Définition des pins
-const int trig_pin = 9;
-const int echo_pin = 10;
+const int trig_pin = SENSOR_LEFT_PIN;
+const int echo_pin = SENSOR_RIGHT_PIN;
 const int button_pin = 7;  // Nouveau : bouton connecté à la pin 7
 
 // Définition des variables

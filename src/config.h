@@ -3,10 +3,9 @@
 
 // === Pin Assignments ===
 // Motor pins
-#define MOTOR_LEFT_PWM 9    // PWM pin for left motor
-#define MOTOR_RIGHT_PWM 10  // PWM pin for right motor
-#define MOTOR_LEFT_DIR 7    // Direction pin for left motor
-#define MOTOR_RIGHT_DIR 8   // Direction pin for right motor
+#define MOTOR_PIN1 9  
+#define MOTOR_PIN2 10 
+#define ENABLE_PIN 11 // pin to enable the motor (PWM)
 
 // Sensor pins
 #define SENSOR_LEFT_PIN A0  // Analog pin for the left obstacle sensor
@@ -23,9 +22,6 @@
 
 // Sensor thresholds
 #define SENSOR_THRESHOLD 500 // Threshold for obstacle detection
-
-// FSM settings
-#define STATE_CHANGE_DELAY 200 // Delay in milliseconds for state transition
 
 // Bluetooth settings
 #define BLUETOOTH_BAUDRATE 9600 // Baud rate for Bluetooth communication
